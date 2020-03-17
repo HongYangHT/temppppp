@@ -3,7 +3,7 @@
  * @LastEditors: sam.hongyang
  * @Description: 生产环境设置
  * @Date: 2019-12-19 14:54:12
- * @LastEditTime: 2020-03-17 15:26:23
+ * @LastEditTime: 2020-03-17 16:35:09
  */
 const merge = require('webpack-merge')
 const base = require('./webpack.config')
@@ -32,13 +32,13 @@ module.exports = smp.wrap(
       chunkFilename: 'js/[name].[chunkhash].js',
       umdNamedDefine: true
     },
-    externals: {
-      vue: 'lib/vue.js',
-      vuex: 'lib/vuex.js',
-      'vue-router': 'lib/vue-router.js',
-      'vue-i18n': 'lib/vue-i18n.js',
-      axios: 'lib/axios.js'
-    },
+    // externals: {
+    //   vue: '/assets/lib/vue.js',
+    //   vuex: '/assets/lib/vuex.js',
+    //   'vue-router': '/assets/lib/vue-router.js',
+    //   'vue-i18n': '/assets/lib/vue-i18n.js',
+    //   axios: '/assets/lib/axios.js'
+    // },
     optimization: {
       splitChunks: {
         chunks: 'all',
@@ -155,28 +155,28 @@ module.exports = smp.wrap(
       }
     },
     plugins: [
-      new CopyPlugin([
-        {
-          from: 'node_modules/vue/dist/vue.min.js',
-          to: 'lib/vue.js'
-        },
-        {
-          from: 'node_modules/vue-i18n/dist/vue-i18n.min.js',
-          to: 'lib/vue-i18n.js'
-        },
-        {
-          from: 'node_modules/vue-router/dist/vue-router.min.js',
-          to: 'lib/vue-router.js'
-        },
-        {
-          from: 'node_modules/vuex/dist/vuex.min.js',
-          to: 'lib/vuex.js'
-        },
-        {
-          from: 'node_modules/axios/dist/axios.min.js',
-          to: 'lib/axios.js'
-        }
-      ]),
+      // new CopyPlugin([
+      //   {
+      //     from: 'node_modules/vue/dist/vue.js',
+      //     to: 'lib/vue.js'
+      //   },
+      //   {
+      //     from: 'node_modules/vue-i18n/dist/vue-i18n.js',
+      //     to: 'lib/vue-i18n.js'
+      //   },
+      //   {
+      //     from: 'node_modules/vue-router/dist/vue-router.js',
+      //     to: 'lib/vue-router.js'
+      //   },
+      //   {
+      //     from: 'node_modules/vuex/dist/vuex.js',
+      //     to: 'lib/vuex.js'
+      //   },
+      //   {
+      //     from: 'node_modules/axios/dist/axios.js',
+      //     to: 'lib/axios.js'
+      //   }
+      // ]),
       new CompileEnd(stats => {
         spinner.stop()
         console.log('\n')
