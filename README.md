@@ -1,6 +1,6 @@
-# pay-gateway-dashboard
+# template
 
-> 支付网关管理后台
+> 后台模版工程
 
 ## 开发环境配置
 
