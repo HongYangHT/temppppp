@@ -1,0 +1,6 @@
+export const SET_TOKEN = 'setToken'
+export const SET_FUNCTION_LIST = 'setFunctionList'
+export const SET_LOGIN_INFO = 'setLoginInfo'
+export const SET_FUNCTION_TREE = 'setFunctionTree'
+export const SET_SUB_LIST = 'setSubList'
+export const SET_PAGE_LIST = 'setPageList'

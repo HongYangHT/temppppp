@@ -1,0 +1,6 @@
+export const SET_ACTIVENAME = 'setActiveName'
+export const SET_SUB_ACTIVENAME = 'setSubActiveName'
+export const SET_MENU_LIST = 'setMenuList'
+export const SET_ORIGIN_MENU_LIST = 'setOriginMenuList'
+export const SET_TOKEN = 'setToken'
+export const SET_USER_INFO = 'setUserInfo'

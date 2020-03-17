@@ -1,0 +1,33 @@
+.custom__table {
+  position: relative;
+  display: flex;
+  max-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__page {
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  .ivu-table-wrapper {
+    flex: 1;
+    overflow: hidden;
+    border: 1px solid #e8eaec;
+    border-bottom: 0;
+  }
+
+  .ivu-table-overflowY.ivu-table-body {
+    position: relative;
+  }
+
+  .ivu-table-body {
+    position: relative;
+  }
+
+  td.ivu-table-column-center .ivu-table-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

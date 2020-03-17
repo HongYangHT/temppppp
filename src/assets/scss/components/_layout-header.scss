@@ -1,0 +1,14 @@
+.layout__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  &__left {
+    width: 75%;
+  }
+
+  &__right {
+    margin-left: auto;
+    text-align: right;
+  }
+}

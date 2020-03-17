@@ -1,0 +1,11 @@
+.search__panel {
+  position: relative;
+
+  &__item {
+    width: 240px;
+  }
+
+  &__item--long {
+    width: 320px;
+  }
+}

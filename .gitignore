@@ -1,0 +1,12 @@
+.vscode
+.DS_Store
+.idea
+*.log
+/.vscode/**
+node_modules
+yarn.lock
+package-lock.json
+dist
+output
+examples/*
+.stylelintcache

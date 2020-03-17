@@ -1,0 +1,17 @@
+.bottom__panel {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding: 20px 20px;
+  margin: 0 -24px -24px;
+  background: #fff;
+  box-shadow: 0 0 8px 0 #ddd;
+
+  .ivu-btn {
+    min-width: 100px;
+    margin-right: 20px;
+  }
+}

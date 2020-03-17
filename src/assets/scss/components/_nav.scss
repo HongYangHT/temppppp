@@ -1,0 +1,17 @@
+.custom__nav {
+  display: flex;
+
+  &__right {
+    padding-right: 20px;
+    margin-left: auto;
+  }
+
+  &__logout {
+    margin-left: 10px;
+  }
+
+  &__tip {
+    font-size: 20px;
+  }
+}
+

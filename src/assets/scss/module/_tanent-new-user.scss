@@ -1,0 +1,14 @@
+.tanent__user {
+  position: relative;
+
+  &__content {
+    padding-bottom: 100px;
+    overflow: auto;
+    overflow-x: hidden;
+    flex: 1;
+  }
+
+  &__check {
+    margin-left: 20px;
+  }
+}

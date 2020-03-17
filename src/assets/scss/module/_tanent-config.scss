@@ -1,0 +1,41 @@
+.tanent {
+  position: relative;
+
+  &__title {
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    margin: 30px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: #000;
+      content: "";
+    }
+
+    .ivu-alert {
+      margin-bottom: 0;
+      margin-left: 20px;
+      flex: 1;
+    }
+
+    .ivu-switch {
+      margin-left: 20px;
+    }
+  }
+
+  form {
+    width: 70%;
+  }
+
+  .ivu-form-item {
+    margin-bottom: 0;
+  }
+}

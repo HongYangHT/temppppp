@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+}
+
+.layout__content {
+  padding: 0 24px 24px;
+}
+
+.content__content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+
+  > div {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
+.sider__left {
+  width: auto;
+  max-width: auto;
+  min-width: auto;
+  flex: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 30px;
+}
+
+.action-panel {
+  position: relative;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+  background: #587dff;
+  visibility: hidden;
+  // transition: all ease-in-out .1s;
+
+  span {
+    display: inline-block;
+    padding: 1px 10px;
+    cursor: pointer;
+  }
+}
+
+.action-panel-wrapper {
+  position: relative;
+}
+
+tr.ivu-table-row-hover td .action-panel {
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  z-index: 9999;
+  height: 48px;
+  line-height: 46px;
+  visibility: visible;
+}
+
+.ivu-layout.ivu-layout-has-sider {
+  height: 0;
+  flex: 1;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
